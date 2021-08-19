@@ -34,7 +34,8 @@ public class AdminService {
 	}
 	
 	public Admin findAdmin (Long id) {
-		return adminRepo.findAdminById(id);
+		return adminRepo.findAdminById(id)
+				.orElseThrow(() -> new AdminNotFoundException("fdsf"));
 	}
 	
 }
