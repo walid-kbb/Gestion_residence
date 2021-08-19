@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.kebdev.residence_locations.exception.AdminNotFoundException;
 import com.kebdev.residence_locations.model.Admin;
 import com.kebdev.residence_locations.repo.AdminRepo;
 
