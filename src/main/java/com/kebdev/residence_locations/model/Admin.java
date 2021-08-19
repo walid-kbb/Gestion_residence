@@ -10,6 +10,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Admin implements Serializable {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(nullable = false, updatable = false)
