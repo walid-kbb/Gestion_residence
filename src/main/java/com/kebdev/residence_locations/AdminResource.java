@@ -2,6 +2,8 @@ package com.kebdev.residence_locations;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -54,6 +56,7 @@ public class AdminResource {
 		return new ResponseEntity<>(updateAdmin,HttpStatus.OK);
 	}
 	
+	@Transactional
 	@DeleteMapping("/delete/{id}")
 	public ResponseEntity<?> deleteAdmin (@PathVariable("id") Long id){
 		
