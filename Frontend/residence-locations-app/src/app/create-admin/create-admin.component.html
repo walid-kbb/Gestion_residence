@@ -1,1 +1,14 @@
-<p>create-admin works!</p>
+<h3> create admin</h3>
+
+<form (ngSubmit) = "onSubmit()">
+<div class="form-group">
+    <label> username </label>
+    <input type="text" class="form-control" id="username" [(ngModel)] = "admin.username" name = "username">
+
+    <label> password </label>
+    <input type="password" class="form-control" id="password" [(ngModel)] = "admin.password" name ="password">
+</div>
+
+<button type="submit">submit </button>
+
+</form>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Admin } from '../admin';
 
 @Component({
   selector: 'app-create-admin',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateAdminComponent implements OnInit {
 
+  admin : Admin = new Admin ();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+    
+
   }
 
 }
